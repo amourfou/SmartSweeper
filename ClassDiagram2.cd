@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="C2DMatrix" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAAAAAABIAAAAAEEAAAAAAAkAEAAAAAAA=</HashCode>
+      <FileName>C2DMatrix.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CController">
+    <Position X="2.25" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAQADATAsAiAAAAAEABAAAiAAARSAQAIABAACJAEAgA=</HashCode>
+      <FileName>CController.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CGenAlg" Collapsed="true">
+    <Position X="0.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABEIAAAAAoCABAIQgAQAAAAAAAAAAABCDAwABCAQgAA=</HashCode>
+      <FileName>CGenAlg.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CMinesweeper">
+    <Position X="4.75" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAQggAACAIAABAAoAAAIEhAhAAAKAIUAAAAAAAAAAAA=</HashCode>
+      <FileName>CMinesweeper.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CNeuralNet">
+    <Position X="7" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAwAAAAAAAIAAABAAAAAQgAAAAAICAAACAAFAAAAAAA=</HashCode>
+      <FileName>CNeuralNet.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CParams" Collapsed="true">
+    <Position X="0.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAEAiAAASAACAAgQEEQAVAAUJAQAAAQAAAAgAAAAAAw=</HashCode>
+      <FileName>CParams.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CTimer" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IBAAABAAAKAAAAABACACAAABAgQBAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>CTimer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="SGenome">
+    <Position X="9.5" Y="2.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAABAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CGenAlg.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="SNeuron">
+    <Position X="11.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>CNeuralNet.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="SNeuronLayer">
+    <Position X="9.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAACAAAgAAAQAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CNeuralNet.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="SVector2D" Collapsed="true">
+    <Position X="0.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAABgAAAAAQA=</HashCode>
+      <FileName>SVector2D.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="SPoint" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgAEAAAAA=</HashCode>
+      <FileName>utils.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Font Name="맑은 고딕" Size="9" />
+</ClassDiagram>

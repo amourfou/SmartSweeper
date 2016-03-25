@@ -1,0 +1,93 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: smart sweepers - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP61.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Debug/smart sweepers.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"J:\게임개발 포트폴리오\쉽게 풀어쓴 인공지능 게임 프로그래밍\example_code\Chapter07\smart sweepers - v1.0\DoubleArray.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP61.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP62.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/smart sweepers.pdb" /debug /machine:I386 /out:"Debug/smart sweepers.exe" /pdbtype:sept 
+".\Debug\C2DMatrix.obj"
+".\Debug\CController.obj"
+".\Debug\CGenAlg.obj"
+".\Debug\CMinesweeper.obj"
+".\Debug\CNeuralNet.obj"
+".\Debug\CParams.obj"
+".\Debug\CTimer.obj"
+".\Debug\main.obj"
+".\Debug\utils.obj"
+".\Debug\Script1.res"
+".\Debug\DoubleArray.obj"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP62.tmp"
+<h3>Output Window</h3>
+Compiling...
+DoubleArray.cpp
+j:\게임개발 포트폴리오\쉽게 풀어쓴 인공지능 게임 프로그래밍\example_code\chapter07\smart sweepers - v1.0\doublearray.h(78) : error C2065: 'ASSERT' : undeclared identifier
+j:\게임개발 포트폴리오\쉽게 풀어쓴 인공지능 게임 프로그래밍\example_code\chapter07\smart sweepers - v1.0\doublearray.cpp(36) : error C2065: 'NULL' : undeclared identifier
+j:\게임개발 포트폴리오\쉽게 풀어쓴 인공지능 게임 프로그래밍\example_code\chapter07\smart sweepers - v1.0\doublearray.cpp(36) : error C2440: '=' : cannot convert from 'int' to 'double *'
+        Conversion from integral type to pointer type requires reinterpret_cast, C-style cast or function-style cast
+j:\게임개발 포트폴리오\쉽게 풀어쓴 인공지능 게임 프로그래밍\example_code\chapter07\smart sweepers - v1.0\doublearray.cpp(42) : error C2065: 'ASSERT_VALID' : undeclared identifier
+j:\게임개발 포트폴리오\쉽게 풀어쓴 인공지능 게임 프로그래밍\example_code\chapter07\smart sweepers - v1.0\doublearray.cpp(44) : error C2065: 'BYTE' : undeclared identifier
+j:\게임개발 포트폴리오\쉽게 풀어쓴 인공지능 게임 프로그래밍\example_code\chapter07\smart sweepers - v1.0\doublearray.cpp(44) : error C2059: syntax error : ')'
+j:\게임개발 포트폴리오\쉽게 풀어쓴 인공지능 게임 프로그래밍\example_code\chapter07\smart sweepers - v1.0\doublearray.cpp(60) : error C2059: syntax error : ')'
+j:\게임개발 포트폴리오\쉽게 풀어쓴 인공지능 게임 프로그래밍\example_code\chapter07\smart sweepers - v1.0\doublearray.cpp(61) : error C2440: '=' : cannot convert from 'int' to 'double *'
+        Conversion from integral type to pointer type requires reinterpret_cast, C-style cast or function-style cast
+j:\게임개발 포트폴리오\쉽게 풀어쓴 인공지능 게임 프로그래밍\example_code\chapter07\smart sweepers - v1.0\doublearray.cpp(64) : error C2446: '==' : no conversion from 'int' to 'double *'
+        Conversion from integral type to pointer type requires reinterpret_cast, C-style cast or function-style cast
+j:\게임개발 포트폴리오\쉽게 풀어쓴 인공지능 게임 프로그래밍\example_code\chapter07\smart sweepers - v1.0\doublearray.cpp(64) : error C2040: '==' : 'double *' differs in levels of indirection from 'int'
+j:\게임개발 포트폴리오\쉽게 풀어쓴 인공지능 게임 프로그래밍\example_code\chapter07\smart sweepers - v1.0\doublearray.cpp(70) : error C2065: 'DEBUG_NEW' : undeclared identifier
+j:\게임개발 포트폴리오\쉽게 풀어쓴 인공지능 게임 프로그래밍\example_code\chapter07\smart sweepers - v1.0\doublearray.cpp(70) : error C2146: syntax error : missing ';' before identifier 'BYTE'
+j:\게임개발 포트폴리오\쉽게 풀어쓴 인공지능 게임 프로그래밍\example_code\chapter07\smart sweepers - v1.0\doublearray.cpp(70) : error C2109: subscript requires array or pointer type
+j:\게임개발 포트폴리오\쉽게 풀어쓴 인공지능 게임 프로그래밍\example_code\chapter07\smart sweepers - v1.0\doublearray.cpp(72) : error C2065: 'memset' : undeclared identifier
+j:\게임개발 포트폴리오\쉽게 풀어쓴 인공지능 게임 프로그래밍\example_code\chapter07\smart sweepers - v1.0\doublearray.cpp(95) : error C2065: 'min' : undeclared identifier
+j:\게임개발 포트폴리오\쉽게 풀어쓴 인공지능 게임 프로그래밍\example_code\chapter07\smart sweepers - v1.0\doublearray.cpp(95) : error C2065: 'max' : undeclared identifier
+j:\게임개발 포트폴리오\쉽게 풀어쓴 인공지능 게임 프로그래밍\example_code\chapter07\smart sweepers - v1.0\doublearray.cpp(113) : error C2146: syntax error : missing ';' before identifier 'BYTE'
+j:\게임개발 포트폴리오\쉽게 풀어쓴 인공지능 게임 프로그래밍\example_code\chapter07\smart sweepers - v1.0\doublearray.cpp(113) : error C2109: subscript requires array or pointer type
+j:\게임개발 포트폴리오\쉽게 풀어쓴 인공지능 게임 프로그래밍\example_code\chapter07\smart sweepers - v1.0\doublearray.cpp(116) : error C2065: 'memcpy' : undeclared identifier
+j:\게임개발 포트폴리오\쉽게 풀어쓴 인공지능 게임 프로그래밍\example_code\chapter07\smart sweepers - v1.0\doublearray.cpp(124) : error C2059: syntax error : ')'
+j:\게임개발 포트폴리오\쉽게 풀어쓴 인공지능 게임 프로그래밍\example_code\chapter07\smart sweepers - v1.0\doublearray.cpp(164) : error C2440: 'initializing' : cannot convert from 'int' to 'double *'
+        Conversion from integral type to pointer type requires reinterpret_cast, C-style cast or function-style cast
+j:\게임개발 포트폴리오\쉽게 풀어쓴 인공지능 게임 프로그래밍\example_code\chapter07\smart sweepers - v1.0\doublearray.cpp(167) : error C2146: syntax error : missing ';' before identifier 'BYTE'
+j:\게임개발 포트폴리오\쉽게 풀어쓴 인공지능 게임 프로그래밍\example_code\chapter07\smart sweepers - v1.0\doublearray.cpp(167) : error C2109: subscript requires array or pointer type
+j:\게임개발 포트폴리오\쉽게 풀어쓴 인공지능 게임 프로그래밍\example_code\chapter07\smart sweepers - v1.0\doublearray.cpp(174) : error C2059: syntax error : ')'
+j:\게임개발 포트폴리오\쉽게 풀어쓴 인공지능 게임 프로그래밍\example_code\chapter07\smart sweepers - v1.0\doublearray.cpp(212) : error C2065: 'memmove' : undeclared identifier
+j:\게임개발 포트폴리오\쉽게 풀어쓴 인공지능 게임 프로그래밍\example_code\chapter07\smart sweepers - v1.0\doublearray.cpp(250) : error C2446: '!=' : no conversion from 'int' to 'class CDoubleArray *'
+        Conversion from integral type to pointer type requires reinterpret_cast, C-style cast or function-style cast
+j:\게임개발 포트폴리오\쉽게 풀어쓴 인공지능 게임 프로그래밍\example_code\chapter07\smart sweepers - v1.0\doublearray.cpp(250) : error C2040: '!=' : 'class CDoubleArray *' differs in levels of indirection from 'int'
+j:\게임개발 포트폴리오\쉽게 풀어쓴 인공지능 게임 프로그래밍\example_code\chapter07\smart sweepers - v1.0\doublearray.cpp(251) : error C2065: 'ASSERT_KINDOF' : undeclared identifier
+j:\게임개발 포트폴리오\쉽게 풀어쓴 인공지능 게임 프로그래밍\example_code\chapter07\smart sweepers - v1.0\doublearray.cpp(251) : error C2275: 'CDoubleArray' : illegal use of this type as an expression
+j:\게임개발 포트폴리오\쉽게 풀어쓴 인공지능 게임 프로그래밍\example_code\chapter07\smart sweepers - v1.0\doublearray.cpp(269) : error C2039: 'Dump' : is not a member of 'CDoubleArray'
+        j:\게임개발 포트폴리오\쉽게 풀어쓴 인공지능 게임 프로그래밍\example_code\chapter07\smart sweepers - v1.0\doublearray.h(5) : see declaration of 'CDoubleArray'
+j:\게임개발 포트폴리오\쉽게 풀어쓴 인공지능 게임 프로그래밍\example_code\chapter07\smart sweepers - v1.0\doublearray.cpp(269) : error C2065: 'CDumpContext' : undeclared identifier
+j:\게임개발 포트폴리오\쉽게 풀어쓴 인공지능 게임 프로그래밍\example_code\chapter07\smart sweepers - v1.0\doublearray.cpp(269) : error C2065: 'dc' : undeclared identifier
+j:\게임개발 포트폴리오\쉽게 풀어쓴 인공지능 게임 프로그래밍\example_code\chapter07\smart sweepers - v1.0\doublearray.cpp(269) : error C2182: 'Dump' : illegal use of type 'void'
+j:\게임개발 포트폴리오\쉽게 풀어쓴 인공지능 게임 프로그래밍\example_code\chapter07\smart sweepers - v1.0\doublearray.cpp(269) : error C2143: syntax error : missing ';' before 'const'
+j:\게임개발 포트폴리오\쉽게 풀어쓴 인공지능 게임 프로그래밍\example_code\chapter07\smart sweepers - v1.0\doublearray.cpp(269) : error C2143: syntax error : missing ';' before 'const'
+j:\게임개발 포트폴리오\쉽게 풀어쓴 인공지능 게임 프로그래밍\example_code\chapter07\smart sweepers - v1.0\doublearray.cpp(270) : error C2143: syntax error : missing ';' before '{'
+j:\게임개발 포트폴리오\쉽게 풀어쓴 인공지능 게임 프로그래밍\example_code\chapter07\smart sweepers - v1.0\doublearray.cpp(270) : error C2447: missing function header (old-style formal list?)
+j:\게임개발 포트폴리오\쉽게 풀어쓴 인공지능 게임 프로그래밍\example_code\chapter07\smart sweepers - v1.0\doublearray.cpp(283) : error C2039: 'AssertValid' : is not a member of 'CDoubleArray'
+        j:\게임개발 포트폴리오\쉽게 풀어쓴 인공지능 게임 프로그래밍\example_code\chapter07\smart sweepers - v1.0\doublearray.h(5) : see declaration of 'CDoubleArray'
+j:\게임개발 포트폴리오\쉽게 풀어쓴 인공지능 게임 프로그래밍\example_code\chapter07\smart sweepers - v1.0\doublearray.cpp(284) : error C2270: 'AssertValid' : modifiers not allowed on nonmember functions
+j:\게임개발 포트폴리오\쉽게 풀어쓴 인공지능 게임 프로그래밍\example_code\chapter07\smart sweepers - v1.0\doublearray.cpp(285) : error C2653: 'CObject' : is not a class or namespace name
+j:\게임개발 포트폴리오\쉽게 풀어쓴 인공지능 게임 프로그래밍\example_code\chapter07\smart sweepers - v1.0\doublearray.cpp(287) : error C2065: 'm_pData' : undeclared identifier
+j:\게임개발 포트폴리오\쉽게 풀어쓴 인공지능 게임 프로그래밍\example_code\chapter07\smart sweepers - v1.0\doublearray.cpp(289) : error C2065: 'm_nSize' : undeclared identifier
+j:\게임개발 포트폴리오\쉽게 풀어쓴 인공지능 게임 프로그래밍\example_code\chapter07\smart sweepers - v1.0\doublearray.cpp(290) : error C2065: 'm_nMaxSize' : undeclared identifier
+j:\게임개발 포트폴리오\쉽게 풀어쓴 인공지능 게임 프로그래밍\example_code\chapter07\smart sweepers - v1.0\doublearray.cpp(297) : error C2065: 'AfxIsValidAddress' : undeclared identifier
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+smart sweepers.exe - 44 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
