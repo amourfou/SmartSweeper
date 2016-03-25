@@ -8,22 +8,20 @@
 //	sets up the population with random floats
 //
 //-----------------------------------------------------------------------
-CGenAlg::CGenAlg(int	  popsize,
-                 double	MutRat,
-                 double	CrossRat,
-                 int	  numweights) :	m_iPopSize(popsize),
-                                      m_dMutationRate(MutRat),
-										                  m_dCrossoverRate(CrossRat),
-										                  m_iChromoLength(numweights),
-										                  m_dTotalFitness(0),
-										                  m_cGeneration(0),
-										                  m_iFittestGenome(0),
-										                  m_dBestFitness(0),
-										                  m_dWorstFitness(99999999),
-										                  m_dAverageFitness(0)
+CGenAlg::CGenAlg(int popsize, double MutRat, double CrossRat, int numweights) :
+	m_iPopSize(popsize),
+	m_dMutationRate(MutRat),
+	m_dCrossoverRate(CrossRat),
+	m_iChromoLength(numweights),
+	m_dTotalFitness(0),
+	m_cGeneration(0),
+	m_iFittestGenome(0),
+	m_dBestFitness(0),
+	m_dWorstFitness(99999999),
+	m_dAverageFitness(0)
 {
-	//initialise population with chromosomes consisting of random
-	//weights and all fitnesses set to zero
+	// initialise population with chromosomes consisting of random
+	// weights and all fitnesses set to zero
 	for (int i=0; i<m_iPopSize; ++i)
 	{
 		m_vecPop.push_back(SGenome());
@@ -43,8 +41,8 @@ CGenAlg::CGenAlg(int	  popsize,
 //-----------------------------------------------------------------------
 void CGenAlg::Mutate(vector<double> &chromo)
 {
-	//traverse the chromosome and mutate each weight dependent
-	//on the mutation rate
+	// traverse the chromosome and mutate each weight dependent
+	// on the mutation rate
 	for (int i=0; i<chromo.size(); ++i)
 	{
 		//do we perturb this weight?
@@ -81,8 +79,7 @@ SGenome CGenAlg::GetChromoRoulette()
 		if (FitnessSoFar >= Slice)
 		{
 			TheChosenOne = m_vecPop[i];
-
-      break;
+			break;
 		}
 		
 	}
@@ -139,33 +136,32 @@ void CGenAlg::Crossover(const vector<double> &mum,
 //-----------------------------------------------------------------------
 vector<SGenome> CGenAlg::Epoch(vector<SGenome> &old_pop)
 {
-	//assign the given population to the classes population
-  m_vecPop = old_pop;
+	// assign the given population to the classes population
+	m_vecPop = old_pop;
 
-  //reset the appropriate variables
-  Reset();
+	// reset the appropriate variables
+	Reset();
 
-  //sort the population (for scaling and elitism)
-  sort(m_vecPop.begin(), m_vecPop.end());
+	// sort the population (for scaling and elitism)
+	sort(m_vecPop.begin(), m_vecPop.end());
 
-  //calculate best, worst, average and total fitness
+	// calculate best, worst, average and total fitness
 	CalculateBestWorstAvTot();
   
-  //create a temporary vector to store new chromosones
+	// create a temporary vector to store new chromosones
 	vector <SGenome> vecNewPop;
 
-	//Now to add a little elitism we shall add in some copies of the
-	//fittest genomes. Make sure we add an EVEN number or the roulette
-  //wheel sampling will crash
+	// Now to add a little elitism we shall add in some copies of the
+	// fittest genomes. Make sure we add an EVEN number or the roulette
+	// wheel sampling will crash
 	if (!(CParams::iNumCopiesElite * CParams::iNumElite % 2))
 	{
 		GrabNBest(CParams::iNumElite, CParams::iNumCopiesElite, vecNewPop);
 	}
-	
 
-	//now we enter the GA loop
+	// now we enter the GA loop
 	
-	//repeat until a new population is generated
+	// repeat until a new population is generated
 	while (vecNewPop.size() < m_iPopSize)
 	{
 		//grab two chromosones
@@ -222,18 +218,16 @@ void CGenAlg::FitnessScaleRank()
 //	This works like an advanced form of elitism by inserting NumCopies
 //  copies of the NBest most fittest genomes into a population vector
 //--------------------------------------------------------------------
-void CGenAlg::GrabNBest(int	            NBest,
-                        const int	      NumCopies,
-                        vector<SGenome>	&Pop)
+void CGenAlg::GrabNBest(int NBest, const int NumCopies, vector<SGenome>	&Pop)
 {
-  //add the required amount of copies of the n most fittest 
+	//add the required amount of copies of the n most fittest 
 	//to the supplied vector
 	while(NBest--)
 	{
-		for (int i=0; i<NumCopies; ++i)
+		for (int i = 0; i < NumCopies; ++i)
 		{
 			Pop.push_back(m_vecPop[(m_iPopSize - 1) - NBest]);
-	  }
+		}
 	}
 }
 
@@ -251,13 +245,11 @@ void CGenAlg::CalculateBestWorstAvTot()
 	
 	for (int i=0; i<m_iPopSize; ++i)
 	{
-		//update fittest if necessary
+		// update fittest if necessary
 		if (m_vecPop[i].dFitness > HighestSoFar)
 		{
 			HighestSoFar	 = m_vecPop[i].dFitness;
-			
 			m_iFittestGenome = i;
-
 			m_dBestFitness	 = HighestSoFar;
 		}
 		
@@ -270,8 +262,6 @@ void CGenAlg::CalculateBestWorstAvTot()
 		}
 		
 		m_dTotalFitness	+= m_vecPop[i].dFitness;
-		
-		
 	}//next chromo
 	
 	m_dAverageFitness = m_dTotalFitness / m_iPopSize;
